@@ -1,0 +1,174 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.gym_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="32" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:3:5-67
+14-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:4:5-68
+15-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:4:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:5:5-79
+16-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:5:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:6:5-81
+17-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:6:22-78
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:7:5-79
+18-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:7:22-76
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:8:5-65
+19-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:8:22-62
+20    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+20-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:9:5-77
+20-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:9:22-74
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:10:5-80
+21-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:10:22-77
+22    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+22-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:11:5-74
+22-->C:\Users\paude\OneDrive\Desktop\gym_app\android\app\src\main\AndroidManifest.xml:11:22-71
+23
+24    <uses-feature android:name="android.hardware.camera" />
+24-->[:flutter_barcode_scanner] C:\Users\paude\OneDrive\Desktop\gym_app\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-60
+24-->[:flutter_barcode_scanner] C:\Users\paude\OneDrive\Desktop\gym_app\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:11:19-57
+25
+26    <uses-permission android:name="android.permission.FLASHLIGHT" />
+26-->[:flutter_barcode_scanner] C:\Users\paude\OneDrive\Desktop\gym_app\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-69
+26-->[:flutter_barcode_scanner] C:\Users\paude\OneDrive\Desktop\gym_app\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-66
+27
+28    <application
+29        android:name="android.app.Application"
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.6.0] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/launcher_icon"
+33        android:label="Gym App"
+34        android:largeHeap="true"
+34-->[:flutter_barcode_scanner] C:\Users\paude\OneDrive\Desktop\gym_app\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-33
+35        android:requestLegacyExternalStorage="true"
+36        android:theme="@style/Theme.AppCompat.NoActionBar" >
+36-->[:flutter_barcode_scanner] C:\Users\paude\OneDrive\Desktop\gym_app\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-59
+37        <activity
+38            android:name="com.yalantis.ucrop.UCropActivity"
+39            android:screenOrientation="portrait"
+40            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+41        <activity
+42            android:name="com.example.gym_app.MainActivity"
+43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+44            android:exported="true"
+45            android:hardwareAccelerated="true"
+46            android:launchMode="singleTop"
+47            android:theme="@style/LaunchTheme"
+48            android:windowSoftInputMode="adjustResize" >
+49
+50            <!--
+51                 Specifies an Android theme to apply to this Activity as soon as
+52                 the Android process has started. This theme is visible to the user
+53                 while the Flutter UI initializes. After that, this theme continues
+54                 to determine the Window background behind the Flutter UI.
+55            -->
+56            <meta-data
+57                android:name="io.flutter.embedding.android.NormalTheme"
+58                android:resource="@style/NormalTheme" />
+59
+60            <intent-filter>
+61                <action android:name="android.intent.action.MAIN" />
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+64            </intent-filter>
+65
+66            <meta-data
+67                android:name="flutter_deeplinking_enabled"
+68                android:value="true" />
+69
+70            <intent-filter android:autoVerify="true" >
+71                <action android:name="android.intent.action.VIEW" />
+72
+73                <category android:name="android.intent.category.DEFAULT" />
+74                <category android:name="android.intent.category.BROWSABLE" />
+75
+76                <data
+77                    android:host="{your package name}"
+78                    android:scheme="kpg" />
+79            </intent-filter>
+80        </activity>
+81        <!--
+82             Don't delete the meta-data below.
+83             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+84        -->
+85        <meta-data
+86            android:name="flutterEmbedding"
+87            android:value="2" />
+88
+89        <provider
+89-->[:image_picker] C:\Users\paude\OneDrive\Desktop\gym_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+90            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+90-->[:image_picker] C:\Users\paude\OneDrive\Desktop\gym_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+91            android:authorities="com.example.gym_app.flutter.image_provider"
+91-->[:image_picker] C:\Users\paude\OneDrive\Desktop\gym_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+92            android:exported="false"
+92-->[:image_picker] C:\Users\paude\OneDrive\Desktop\gym_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+93            android:grantUriPermissions="true" >
+93-->[:image_picker] C:\Users\paude\OneDrive\Desktop\gym_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+94            <meta-data
+94-->[:image_picker] C:\Users\paude\OneDrive\Desktop\gym_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+95                android:name="android.support.FILE_PROVIDER_PATHS"
+95-->[:image_picker] C:\Users\paude\OneDrive\Desktop\gym_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+96                android:resource="@xml/flutter_image_picker_file_paths" />
+96-->[:image_picker] C:\Users\paude\OneDrive\Desktop\gym_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+97        </provider>
+98
+99        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+99-->[:flutter_barcode_scanner] C:\Users\paude\OneDrive\Desktop\gym_app\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-91
+99-->[:flutter_barcode_scanner] C:\Users\paude\OneDrive\Desktop\gym_app\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:18:19-88
+100        <activity
+100-->[:url_launcher_android] C:\Users\paude\OneDrive\Desktop\gym_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+101            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+101-->[:url_launcher_android] C:\Users\paude\OneDrive\Desktop\gym_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+102            android:exported="false"
+102-->[:url_launcher_android] C:\Users\paude\OneDrive\Desktop\gym_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+103            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+103-->[:url_launcher_android] C:\Users\paude\OneDrive\Desktop\gym_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+104
+105        <uses-library
+105-->[androidx.window:window:1.0.0-beta04] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+106            android:name="androidx.window.extensions"
+106-->[androidx.window:window:1.0.0-beta04] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+107            android:required="false" />
+107-->[androidx.window:window:1.0.0-beta04] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+108        <uses-library
+108-->[androidx.window:window:1.0.0-beta04] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+109            android:name="androidx.window.sidecar"
+109-->[androidx.window:window:1.0.0-beta04] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+110            android:required="false" />
+110-->[androidx.window:window:1.0.0-beta04] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+111
+112        <activity
+112-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\be2893cfe613ec180e65ae7f6f2e6367\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
+113            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+113-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\be2893cfe613ec180e65ae7f6f2e6367\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
+114            android:exported="false"
+114-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\be2893cfe613ec180e65ae7f6f2e6367\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+115-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\be2893cfe613ec180e65ae7f6f2e6367\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
+116
+117        <meta-data
+117-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\398f53a7f9527407294478b1e6516b93\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
+118            android:name="com.google.android.gms.version"
+118-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\398f53a7f9527407294478b1e6516b93\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
+119            android:value="@integer/google_play_services_version" />
+119-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\paude\.gradle\caches\transforms-2\files-2.1\398f53a7f9527407294478b1e6516b93\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
+120    </application>
+121
+122</manifest>
