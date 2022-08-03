@@ -11,7 +11,7 @@ final storage = new FlutterSecureStorage();
 void main() {
   runApp(
     KhaltiScope(
-        publicKey: "test_public_key_076c0fa9e4294cd8b5eddc3033bf1081",
+//         publicKey: "",
         builder: (context, navigatorKey) {
           return GetMaterialApp(
             title: "Application",
